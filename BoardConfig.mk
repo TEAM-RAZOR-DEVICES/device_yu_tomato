@@ -24,6 +24,10 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_tomato-64_defconfig
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 4.9
+
 # Kernel toolchain
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9-kernel/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
